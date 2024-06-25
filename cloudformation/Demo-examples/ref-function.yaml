@@ -1,0 +1,15 @@
+Resources:
+  MyInstance: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      InstanceType: t2.micro
+      ImageId: ami-0277155c3f0ab2930
+      SecurityGroupIds: [ sg-0c5951e588e800841 ]
+      Tags: 
+        - Key: Name
+          Value: !Join
+            - " "
+              - "My Instance in"
+              - !Ref AWS::Region
+        
+
