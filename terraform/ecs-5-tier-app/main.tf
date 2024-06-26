@@ -45,16 +45,18 @@ module "securitygroups" {
   vpc_id = module.vpc.vpc_id
 }
 
-#module "instances" {
-# source                 = "./modules/instances"
-#backend-servers_sg_id  = module.securitygroups.backend-servers_sg_id
-#frontend-servers_sg_id = module.securitygroups.frontend-servers_sg_id
-#public_subnet_id       = module.subnets.public_subnet_id
-#private_subnet_id      = module.subnets.private_subnet_id
-#vpc_id                 = module.vpc.vpc_id
-#public_subnet1_id      = module.subnets.public_subnet1_id
-#instance_type1         = var.instance_type1
-#}
+/*
+module "instances" {
+  source                 = "./modules/instances"
+  backend-servers_sg_id  = module.securitygroups.backend-servers_sg_id
+  frontend-servers_sg_id = module.securitygroups.frontend-servers_sg_id
+  public_subnet_id       = module.subnets.public_subnet_id
+  private_subnet_id      = module.subnets.private_subnet_id
+  vpc_id                 = module.vpc.vpc_id
+  public_subnet1_id      = module.subnets.public_subnet1_id
+  instance_type1         = var.instance_type1
+}
+*/
 
 module "hostedzones" {
   source                     = "./modules/hostedzones"
@@ -62,7 +64,6 @@ module "hostedzones" {
   rds-address-endpoint       = module.mysql-rds.rds-address-endpoint
   memcached-endpoint         = module.memcached.memcached-endpoint
   rabbit-primary_console_url = module.rabbitmq.rabbit-primary_console_url
-
 }
 
 module "ecs" {
