@@ -15,3 +15,9 @@ Amazon ElastiCache (Memcached): Provides in-memory caching for improving applica
 Amazon OpenSearch Service (Elasticsearch): Facilitates search and data analytics capabilities.
 
 By leveraging AWS native services, this setup ensures high availability, scalability, and ease of management, while Terraform ensures infrastructure consistency and repeatability.
+
+
+Project 2: 
+EKS
+
+This project automates the provisioning of an Amazon EKS (Elastic Kubernetes Service) cluster using Terraform. The setup ensures a scalable, highly available, and secure Kubernetes environment on AWS.
