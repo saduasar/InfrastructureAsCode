@@ -1,8 +1,8 @@
 
 Project 1: 
-ECS-4-Tier-App
+ECS-5-Tier-App
 
-This project automates the deployment of a 4-tier web application using Terraform, ensuring consistent and repeatable infrastructure setup. The application stack utilizes AWS native services and consists of:
+This project automates the deployment of a 5-tier web application using Terraform, ensuring consistent and repeatable infrastructure setup. The application stack utilizes AWS native services and consists of:
 
 Java Web Application: Serves the front-end and back-end logic, deployed on Amazon ECS.
 
